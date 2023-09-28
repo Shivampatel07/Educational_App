@@ -1,0 +1,1651 @@
+[
+  {
+    "title": "HTML - Hyper Text Markup Language",
+    "sections": [
+      {
+        "section_title": "Introduction to HTML",
+        "section_content": "HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It structures the content on a web page using a system of elements, known as tags, to define the various parts of a document."
+      },
+      {
+        "section_title": "Headings",
+        "section_content": "Headings are defined with the <h1> to <h6> tags. <h1> defines the highest-level heading, while <h6> defines the lowest. For example, <h1>This is a Heading 1</h1>."
+      },
+      {
+        "section_title": "Paragraphs",
+        "section_content": "Paragraphs are defined with the <p> tag. For example, <p>This is a paragraph.</p>."
+      },
+      {
+        "section_title": "Links",
+        "section_content": "Links are created with the <a> tag. Use the 'href' attribute to specify the URL. For example, <a href='https://www.example.com'>Visit Example.com</a>."
+      },
+      {
+        "section_title": "Lists",
+        "section_content": "Unordered lists use the <ul> tag, and ordered lists use the <ol> tag. List items are defined with the <li> tag. For example:\n\n<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n</ul>"
+      },
+      {
+        "section_title": "Images",
+        "section_content": "Images are displayed with the <img> tag. Use the 'src' attribute to specify the image file's URL. For example, <img src='image.jpg' alt='Description of the image'>."
+      },
+      {
+        "section_title": "Tables",
+        "section_content": "Tables are created with the <table> tag. They consist of rows defined with the <tr> tag and cells defined with the <td> tag. Here's an example:\n\n<table>\n  <tr>\n    <td>Row 1, Cell 1</td>\n    <td>Row 1, Cell 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Cell 1</td>\n    <td>Row 2, Cell 2</td>\n  </tr>\n</table>"
+      },
+      {
+        "section_title": "Forms",
+        "section_content": "Forms are created with the <form> tag. You can add input elements like text fields, radio buttons, and checkboxes. Here's a simple form example:\n\n<form>\n  <label for='name'>Name:</label>\n  <input type='text' id='name' name='name'><br>\n  <label for='email'>Email:</label>\n  <input type='email' id='email' name='email'><br>\n  <input type='submit' value='Submit'>\n</form>"
+      },
+      {
+        "section_title": "Divisions",
+        "section_content": "The <div> tag is used to group elements and apply styles or scripts to them collectively. It does not affect the content's layout by default."
+      },
+      {
+        "section_title": "Comments",
+        "section_content": "Comments in HTML are defined using <!-- and -->. They are not displayed on the web page and are used for adding notes and explanations in the code."
+      },
+      {
+        "section_title": "Form Controls",
+        "section_content": [
+          {
+            "concept": "<input>",
+            "description": "The <input> tag is used for various form controls, such as text fields, checkboxes, radio buttons, and more."
+          },
+          {
+            "concept": "<textarea>",
+            "description": "This tag is used to create a multi-line text input field, often used for longer text entries."
+          },
+          {
+            "concept": "<select>",
+            "description": "The <select> tag creates a dropdown list, and <option> tags are used to define the available options within the list."
+          },
+          {
+            "concept": "<button>",
+            "description": "This tag creates a clickable button that can trigger actions within a form."
+          }
+        ]
+      },
+      {
+        "section_title": "Semantic HTML",
+        "section_content": [
+          {
+            "concept": "<header>",
+            "description": "Defines a header for a document or section."
+          },
+          {
+            "concept": "<nav>",
+            "description": "Represents a section of navigation links."
+          },
+          {
+            "concept": "<article>",
+            "description": "Defines a self-contained composition within a document, such as a blog post or news article."
+          },
+          {
+            "concept": "<section>",
+            "description": "Represents a generic section of content within a document."
+          },
+          {
+            "concept": "<aside>",
+            "description": "Represents content that is tangentially related to the content around it."
+          }
+        ]
+      },
+      {
+        "section_title": "Multimedia",
+        "section_content": [
+          {
+            "concept": "<audio>",
+            "description": "Used to embed audio content on a web page, with the source provided via the 'src' attribute."
+          },
+          {
+            "concept": "<video>",
+            "description": "Allows the embedding of video content, with sources specified using the 'src' and '<source>' tags."
+          }
+        ]
+      },
+      {
+        "section_title": "Links and Anchors",
+        "section_content": [
+          {
+            "concept": "<a>",
+            "description": "In addition to simple links, the '<a>' tag can also be used for creating named anchors within a page, allowing users to jump to specific sections."
+          }
+        ]
+      },
+      {
+        "section_title": "Metadata",
+        "section_content": [
+          {
+            "concept": "<meta>",
+            "description": "Used to provide metadata about the HTML document, such as character encoding and page descriptions, within the '<head>' section."
+          }
+        ]
+      },
+      {
+        "section_title": "Comments",
+        "section_content": [
+          {
+            "concept": "<!-- ... -->",
+            "description": "Comments in HTML are used for adding explanatory notes within the code. They don't appear in the rendered page."
+          }
+        ]
+      },
+      {
+        "section_title": "Special Characters (HTML Entities)",
+        "section_content": [
+          {
+            "concept": "&lt;",
+            "description": "HTML entity for '<'."
+          },
+          {
+            "concept": "&gt;",
+            "description": "HTML entity for '>'."
+          },
+          {
+            "concept": "&amp;",
+            "description": "HTML entity for '&'."
+          },
+          {
+            "concept": "&quot;",
+            "description": "HTML entity for '\"'."
+          },
+          {
+            "concept": "&apos;",
+            "description": "HTML entity for '''."
+          }
+        ]
+      },
+      {
+        "section_title": "Formatting and Text-level Elements",
+        "section_content": [
+          {
+            "concept": "<strong>",
+            "description": "Indicates strong importance, typically displayed as bold text."
+          },
+          {
+            "concept": "<em>",
+            "description": "Represents emphasized text, often displayed as italicized text."
+          },
+          {
+            "concept": "<abbr>",
+            "description": "Defines an abbreviation or acronym."
+          },
+          {
+            "concept": "<mark>",
+            "description": "Highlights text for reference or emphasis."
+          },
+          {
+            "concept": "<code>",
+            "description": "Used for displaying computer code."
+          },
+          {
+            "concept": "<sup>",
+            "description": "Represents superscript text (e.g., for footnotes)."
+          },
+          {
+            "concept": "<sub>",
+            "description": "Represents subscript text (e.g., for chemical formulas)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "CSS - Cascading Style Sheets",
+    "sections": [
+      {
+        "section_title": "Introduction to CSS",
+        "section_content": "CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation and layout of web pages. It is used to control the visual appearance of HTML elements."
+      },
+      {
+        "section_title": "Selectors and Declarations",
+        "section_content": [
+          {
+            "concept": "color",
+            "description": "Specifies the text color of an element."
+          },
+          {
+            "concept": "font-size",
+            "description": "Sets the size of the font for text elements."
+          },
+          {
+            "concept": "font-family",
+            "description": "Defines the font type for text elements."
+          },
+          {
+            "concept": "background-color",
+            "description": "Sets the background color of an element."
+          },
+          {
+            "concept": "border",
+            "description": "Defines the border of an element with properties like width, style, and color."
+          },
+          {
+            "concept": "margin",
+            "description": "Controls the spacing outside an element."
+          },
+          {
+            "concept": "padding",
+            "description": "Controls the spacing inside an element."
+          },
+          {
+            "concept": "text-align",
+            "description": "Specifies the horizontal alignment of text."
+          },
+          {
+            "concept": "display",
+            "description": "Determines how an element is displayed in the layout (e.g., block, inline, none)."
+          }
+        ]
+      },
+      {
+        "section_title": "Selectors",
+        "section_content": [
+          {
+            "concept": "class",
+            "description": "Selects elements with a specific class attribute."
+          },
+          {
+            "concept": "id",
+            "description": "Selects a single element with a specific id attribute."
+          },
+          {
+            "concept": "element",
+            "description": "Selects all elements of a specific type."
+          },
+          {
+            "concept": "descendant",
+            "description": "Selects elements that are descendants of a specified element."
+          },
+          {
+            "concept": "attribute",
+            "description": "Selects elements with a specific attribute."
+          }
+        ]
+      },
+      {
+        "section_title": "CSS Box Model",
+        "section_content": "The CSS box model describes the layout and spacing of elements on a web page, including content, padding, border, and margin."
+      },
+      {
+        "section_title": "Cascading and Specificity",
+        "section_content": "CSS follows rules of specificity to determine which styles apply to elements. Styles can also cascade, meaning they inherit from parent elements."
+      },
+      {
+        "section_title": "CSS Flexbox",
+        "section_content": "Flexbox is a layout model that simplifies the arrangement of elements in a flexible and efficient way."
+      },
+      {
+        "section_title": "CSS Grid",
+        "section_content": "CSS Grid is a two-dimensional layout system that allows precise control over the placement and alignment of elements in rows and columns."
+      },
+      {
+        "section_title": "Responsive Design",
+        "section_content": "Responsive design techniques in CSS enable web pages to adapt to different screen sizes and devices, providing a better user experience."
+      },
+      {
+        "section_title": "Text Styling",
+        "section_content": [
+          {
+            "concept": "text-decoration",
+            "description": "Specifies text decoration like underline, overline, or line-through."
+          },
+          {
+            "concept": "text-transform",
+            "description": "Controls the capitalization of text (e.g., uppercase, lowercase, capitalize)."
+          },
+          {
+            "concept": "font-weight",
+            "description": "Sets the thickness of characters in a font (e.g., normal, bold)."
+          },
+          {
+            "concept": "line-height",
+            "description": "Defines the vertical space between lines of text."
+          }
+        ]
+      },
+      {
+        "section_title": "Positioning",
+        "section_content": [
+          {
+            "concept": "position",
+            "description": "Determines the positioning method of an element (e.g., relative, absolute, fixed)."
+          },
+          {
+            "concept": "top, right, bottom, left",
+            "description": "Used with 'position' to precisely place an element relative to its containing element."
+          },
+          {
+            "concept": "float",
+            "description": "Controls the alignment of an element within its parent container, often used for layouts."
+          },
+          {
+            "concept": "z-index",
+            "description": "Specifies the stacking order of elements with 'position' other than 'static'."
+          }
+        ]
+      },
+      {
+        "section_title": "Transitions and Animations",
+        "section_content": [
+          {
+            "concept": "transition",
+            "description": "Defines the transition effect for CSS properties (e.g., color, opacity) over time."
+          },
+          {
+            "concept": "animation",
+            "description": "Creates complex animations by defining keyframes and animation properties."
+          }
+        ]
+      },
+      {
+        "section_title": "Pseudo-classes and Pseudo-elements",
+        "section_content": [
+          {
+            "concept": ":hover",
+            "description": "Selects an element when the mouse pointer is over it."
+          },
+          {
+            "concept": ":active",
+            "description": "Selects an element when it's activated (e.g., clicked)."
+          },
+          {
+            "concept": "::before and ::after",
+            "description": "Inserts content before or after the content of an element using CSS."
+          }
+        ]
+      },
+      {
+        "section_title": "Responsive Design",
+        "section_content": [
+          {
+            "concept": "@media",
+            "description": "Defines media queries to apply different styles based on screen size or device characteristics."
+          },
+          {
+            "concept": "max-width",
+            "description": "Sets a maximum width for an element, making it responsive to smaller screens."
+          },
+          {
+            "concept": "min-width",
+            "description": "Sets a minimum width for an element, ensuring it displays properly on larger screens."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "JavaScript Tutorial",
+    "sections": [
+      {
+        "section_title": "Introduction to JavaScript",
+        "section_content": "JavaScript is a versatile and widely-used programming language that allows you to add interactivity and functionality to web pages."
+      },
+      {
+        "section_title": "Variables and Data Types",
+        "section_content": [
+          {
+            "concept": "Variables",
+            "description": "Variables are used to store and manage data in JavaScript. They can hold various data types, including numbers, strings, and objects."
+          },
+          {
+            "concept": "Data Types",
+            "description": "JavaScript has several data types, including numbers, strings, booleans, objects, arrays, and more."
+          }
+        ]
+      },
+      {
+        "section_title": "Control Structures",
+        "section_content": [
+          {
+            "concept": "Conditional Statements",
+            "description": "Conditional statements, like 'if', 'else if', and 'else', allow you to make decisions in your code based on specified conditions."
+          },
+          {
+            "concept": "Loops",
+            "description": "Loops, such as 'for' and 'while', are used to execute code repeatedly."
+          }
+        ]
+      },
+      {
+        "section_title": "Functions",
+        "section_content": "Functions are reusable blocks of code that can be called with different arguments. They are essential for structuring your code."
+      },
+      {
+        "section_title": "Objects and Classes",
+        "section_content": [
+          {
+            "concept": "Objects",
+            "description": "Objects allow you to group related data and functions into a single unit. They consist of key-value pairs."
+          },
+          {
+            "concept": "Classes",
+            "description": "Classes are blueprints for creating objects with shared properties and methods. They are introduced in ES6."
+          }
+        ]
+      },
+      {
+        "section_title": "Arrays",
+        "section_content": "Arrays are used to store collections of data. They can contain elements of different data types and are indexed starting from 0."
+      },
+      {
+        "section_title": "DOM Manipulation",
+        "section_content": "The Document Object Model (DOM) allows you to interact with and manipulate the structure and content of web pages using JavaScript."
+      },
+      {
+        "section_title": "Event Handling",
+        "section_content": "Event handling in JavaScript enables you to respond to user interactions, such as clicks and keypresses, by executing specific code."
+      },
+      {
+        "section_title": "Asynchronous Programming",
+        "section_content": [
+          {
+            "concept": "Callbacks",
+            "description": "Callbacks are functions passed as arguments to other functions, often used for asynchronous operations."
+          },
+          {
+            "concept": "Promises",
+            "description": "Promises provide a cleaner way to handle asynchronous operations and simplify error handling."
+          },
+          {
+            "concept": "Async/Await",
+            "description": "Async/await is a modern approach to handling asynchronous code, making it more readable and maintainable."
+          }
+        ]
+      },
+      {
+        "section_title": "APIs and Fetch",
+        "section_content": "JavaScript can interact with external APIs (Application Programming Interfaces) to retrieve and send data to web servers."
+      },
+      {
+        "section_title": "Error Handling",
+        "section_content": [
+          {
+            "concept": "Try-Catch",
+            "description": "The try-catch statement allows you to handle and recover from errors gracefully."
+          },
+          {
+            "concept": "Throw",
+            "description": "The throw statement is used to generate custom error messages or exceptions."
+          }
+        ]
+      },
+      {
+        "section_title": "Local Storage and Cookies",
+        "section_content": [
+          {
+            "concept": "localStorage",
+            "description": "localStorage allows you to store key-value pairs in the user's browser for persistent data storage."
+          },
+          {
+            "concept": "Cookies",
+            "description": "Cookies are small pieces of data stored on the user's computer. They are often used for user tracking and data storage."
+          }
+        ]
+      },
+      {
+        "section_title": "Scope and Closures",
+        "section_content": [
+          {
+            "concept": "Scope",
+            "description": "Scope defines the accessibility of variables and functions in your code. JavaScript has function scope and block scope."
+          },
+          {
+            "concept": "Closures",
+            "description": "Closures allow functions to remember and access their outer scope even after the outer function has finished executing."
+          }
+        ]
+      },
+      {
+        "section_title": "Modules and Imports",
+        "section_content": [
+          {
+            "concept": "Modules",
+            "description": "Modules are a way to organize and encapsulate code. They allow you to split your code into smaller, reusable files."
+          },
+          {
+            "concept": "Import and Export",
+            "description": "The 'import' and 'export' keywords are used to define and use modules in JavaScript."
+          }
+        ]
+      },
+      {
+        "section_title": "WebSockets",
+        "section_content": "WebSockets provide a full-duplex communication channel over a single TCP connection, enabling real-time data exchange between the client and server."
+      },
+      {
+        "section_title": "Promises and Fetch API",
+        "section_content": [
+          {
+            "concept": "Fetch API",
+            "description": "The Fetch API is a modern way to make HTTP requests in JavaScript, providing a more flexible and powerful alternative to XMLHttpRequest."
+          },
+          {
+            "concept": "Promises",
+            "description": "Promises are used extensively with asynchronous operations to handle data and errors in a more structured manner."
+          }
+        ]
+      },
+      {
+        "section_title": "ES6 Features",
+        "section_content": [
+          {
+            "concept": "Arrow Functions",
+            "description": "Arrow functions provide a concise way to define functions."
+          },
+          {
+            "concept": "Destructuring",
+            "description": "Destructuring allows you to extract values from objects and arrays more easily."
+          },
+          {
+            "concept": "Spread and Rest Operators",
+            "description": "Spread and rest operators simplify working with arrays and objects."
+          }
+        ]
+      },
+      {
+        "section_title": "Async Iteration",
+        "section_content": "Async iteration allows you to iterate over asynchronous data sources, such as streams or database queries."
+      }
+    ]
+  },
+  {
+    "title": "Data Structures and Algorithms ",
+    "sections": [
+      {
+        "section_title": "Introduction to Data Structures and Algorithms",
+        "section_content": "Data Structures and Algorithms (DSA) are fundamental concepts in computer science that enable efficient data organization and manipulation."
+      },
+      {
+        "section_title": "Arrays",
+        "section_content": "Arrays are ordered collections of elements, each identified by an index. They are a fundamental data structure for storing and retrieving data."
+      },
+      {
+        "section_title": "Linked Lists",
+        "section_content": "Linked Lists consist of nodes, where each node contains data and a reference (or link) to the next node. They are used for dynamic data storage."
+      },
+      {
+        "section_title": "Stacks and Queues",
+        "section_content": [
+          {
+            "concept": "Stacks",
+            "description": "Stacks are data structures that follow the Last-In-First-Out (LIFO) principle. They are often used for tasks like function call management."
+          },
+          {
+            "concept": "Queues",
+            "description": "Queues follow the First-In-First-Out (FIFO) principle and are used for tasks like task scheduling and managing data flow."
+          }
+        ]
+      },
+      {
+        "section_title": "Trees",
+        "section_content": [
+          {
+            "concept": "Binary Trees",
+            "description": "Binary Trees are hierarchical structures where each node has at most two children, left and right."
+          },
+          {
+            "concept": "Binary Search Trees (BST)",
+            "description": "BSTs are binary trees with the property that the left subtree contains only nodes with values less than the root, and the right subtree contains nodes with values greater than the root."
+          },
+          {
+            "concept": "Balanced Trees",
+            "description": "Balanced Trees, like AVL trees and Red-Black trees, are designed to maintain balance for efficient search and insertion operations."
+          }
+        ]
+      },
+      {
+        "section_title": "Graphs",
+        "section_content": "Graphs consist of nodes (vertices) and edges. They are used to model complex relationships and can be directed or undirected."
+      },
+      {
+        "section_title": "Searching Algorithms",
+        "section_content": [
+          {
+            "concept": "Linear Search",
+            "description": "Linear search iterates through an array to find a specific element."
+          },
+          {
+            "concept": "Binary Search",
+            "description": "Binary search is a divide-and-conquer algorithm used to search in sorted arrays efficiently."
+          }
+        ]
+      },
+      {
+        "section_title": "Sorting Algorithms",
+        "section_content": [
+          {
+            "concept": "Bubble Sort",
+            "description": "Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order."
+          },
+          {
+            "concept": "Quick Sort",
+            "description": "Quick Sort is a divide-and-conquer algorithm that selects a 'pivot' element and partitions the array into two sub-arrays."
+          },
+          {
+            "concept": "Merge Sort",
+            "description": "Merge Sort divides the unsorted list into n sub-lists, each containing one element, and then repeatedly merges sub-lists to produce new sorted sub-lists."
+          }
+        ]
+      },
+      {
+        "section_title": "Dynamic Programming",
+        "section_content": "Dynamic Programming is a technique for solving problems by breaking them down into smaller overlapping subproblems, often used for optimization problems."
+      },
+      {
+        "section_title": "Complexity Analysis",
+        "section_content": [
+          {
+            "concept": "Big O Notation",
+            "description": "Big O notation is used to analyze the worst-case time complexity of algorithms."
+          },
+          {
+            "concept": "Space Complexity",
+            "description": "Space complexity measures the amount of memory used by an algorithm."
+          }
+        ]
+      },
+      {
+        "section_title": "Hashing",
+        "section_content": "Hashing is a technique used to map data to fixed-size arrays (hash tables) for efficient retrieval. It is often used in data storage and retrieval systems."
+      },
+      {
+        "section_title": "Graph Algorithms",
+        "section_content": [
+          {
+            "concept": "Breadth-First Search (BFS)",
+            "description": "BFS explores all the neighbor nodes at the current depth before moving to the next level."
+          },
+          {
+            "concept": "Depth-First Search (DFS)",
+            "description": "DFS explores as far as possible along a branch before backtracking."
+          },
+          {
+            "concept": "Dijkstra's Algorithm",
+            "description": "Dijkstra's algorithm finds the shortest path between nodes in a weighted graph."
+          },
+          {
+            "concept": "Topological Sorting",
+            "description": "Topological sorting is used to order the vertices of a directed acyclic graph (DAG) based on dependencies."
+          }
+        ]
+      },
+      {
+        "section_title": "Dynamic Data Structures",
+        "section_content": [
+          {
+            "concept": "Hash Map",
+            "description": "A hash map is a data structure that implements an associative array, mapping keys to values."
+          },
+          {
+            "concept": "Priority Queue",
+            "description": "A priority queue is a data structure that stores elements with associated priorities and allows efficient retrieval of the highest-priority element."
+          },
+          {
+            "concept": "Trie",
+            "description": "A trie is a tree-like data structure used to store a dynamic set or associative array where the keys are usually strings."
+          }
+        ]
+      },
+      {
+        "section_title": "Greedy Algorithms",
+        "section_content": "Greedy algorithms make locally optimal choices at each step in the hope of finding a global optimum. They are used in optimization problems."
+      },
+      {
+        "section_title": "Dynamic Programming",
+        "section_content": [
+          {
+            "concept": "Memoization",
+            "description": "Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur again."
+          },
+          {
+            "concept": "Tabulation",
+            "description": "Tabulation is a bottom-up dynamic programming technique that builds solutions from the ground up."
+          }
+        ]
+      },
+      {
+        "section_title": "Complexity Classes",
+        "section_content": [
+          {
+            "concept": "P vs. NP Problem",
+            "description": "The P vs. NP problem is a major unsolved problem in computer science, dealing with the relationship between polynomial time algorithms (P) and non-deterministic polynomial time algorithms (NP)."
+          },
+          {
+            "concept": "NP-Hard and NP-Complete",
+            "description": "NP-Hard and NP-Complete are classes of problems that are at least as hard as the hardest problems in NP, and they have wide implications in algorithmic complexity."
+          }
+        ]
+      },
+      {
+        "section_title": "Randomized Algorithms",
+        "section_content": [
+          {
+            "concept": "Monte Carlo Algorithms",
+            "description": "Monte Carlo algorithms use random sampling to find approximate solutions to problems."
+          },
+          {
+            "concept": "Las Vegas Algorithms",
+            "description": "Las Vegas algorithms are randomized algorithms that always produce correct results, but the running time may vary."
+          }
+        ]
+      },
+      {
+        "section_title": "String Algorithms",
+        "section_content": [
+          {
+            "concept": "String Matching",
+            "description": "String matching algorithms search for the occurrence of a pattern within a text."
+          },
+          {
+            "concept": "Longest Common Subsequence (LCS)",
+            "description": "LCS algorithms find the longest common subsequence of two or more sequences."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Python Programming",
+    "sections": [
+      {
+        "section_title": "Introduction to Python",
+        "section_content": "Python is a versatile and high-level programming language known for its simplicity and readability. It is widely used in web development, data analysis, and more."
+      },
+      {
+        "section_title": "Variables and Data Types",
+        "section_content": [
+          {
+            "concept": "Variables",
+            "description": "Variables in Python are used to store and manage data. They don't need explicit type declarations."
+          },
+          {
+            "concept": "Data Types",
+            "description": "Python has various data types, including integers, floats, strings, lists, dictionaries, and more."
+          }
+        ]
+      },
+      {
+        "section_title": "Control Structures",
+        "section_content": [
+          {
+            "concept": "Conditional Statements",
+            "description": "Python supports 'if', 'elif', and 'else' statements for decision-making."
+          },
+          {
+            "concept": "Loops",
+            "description": "Loops like 'for' and 'while' are used for iterative tasks in Python."
+          }
+        ]
+      },
+      {
+        "section_title": "Functions",
+        "section_content": "Functions in Python allow you to encapsulate and reuse code. They are defined using the 'def' keyword."
+      },
+      {
+        "section_title": "Lists and Tuples",
+        "section_content": [
+          {
+            "concept": "Lists",
+            "description": "Lists are ordered collections of elements that can be modified (mutable)."
+          },
+          {
+            "concept": "Tuples",
+            "description": "Tuples are ordered collections of elements that are immutable (cannot be changed)."
+          }
+        ]
+      },
+      {
+        "section_title": "Dictionaries and Sets",
+        "section_content": [
+          {
+            "concept": "Dictionaries",
+            "description": "Dictionaries store key-value pairs and allow quick retrieval of values based on keys."
+          },
+          {
+            "concept": "Sets",
+            "description": "Sets are unordered collections of unique elements, often used for mathematical operations."
+          }
+        ]
+      },
+      {
+        "section_title": "File Handling",
+        "section_content": "Python provides built-in functions to read from and write to files, making it easy to work with external data."
+      },
+      {
+        "section_title": "Exception Handling",
+        "section_content": "Python supports try-except blocks for handling exceptions and errors gracefully."
+      },
+      {
+        "section_title": "Object-Oriented Programming (OOP)",
+        "section_content": [
+          {
+            "concept": "Classes and Objects",
+            "description": "Python supports OOP principles, allowing you to create classes and instantiate objects."
+          },
+          {
+            "concept": "Inheritance",
+            "description": "Inheritance allows you to create new classes that inherit attributes and methods from existing classes."
+          },
+          {
+            "concept": "Polymorphism",
+            "description": "Polymorphism enables objects of different classes to be treated as objects of a common superclass."
+          }
+        ]
+      },
+      {
+        "section_title": "Modules and Libraries",
+        "section_content": "Python has a vast ecosystem of libraries and modules that extend its functionality for various purposes, such as NumPy, pandas, and Django."
+      },
+      {
+        "section_title": "Comprehensions",
+        "section_content": [
+          {
+            "concept": "List Comprehensions",
+            "description": "List comprehensions provide a concise way to create lists based on existing lists."
+          },
+          {
+            "concept": "Dictionary Comprehensions",
+            "description": "Dictionary comprehensions allow you to create dictionaries in a compact form."
+          },
+          {
+            "concept": "Set Comprehensions",
+            "description": "Set comprehensions enable the creation of sets using a similar concise syntax."
+          }
+        ]
+      },
+      {
+        "section_title": "Decorators",
+        "section_content": "Decorators are a powerful feature in Python used to modify or extend the behavior of functions or methods."
+      },
+      {
+        "section_title": "Generators",
+        "section_content": "Generators in Python allow you to create iterators in a memory-efficient way using the 'yield' keyword."
+      },
+      {
+        "section_title": "Context Managers",
+        "section_content": "Context managers, often used with the 'with' statement, provide a clean way to manage resources like files and database connections."
+      },
+      {
+        "section_title": "Regular Expressions",
+        "section_content": "Regular expressions (regex) are used for pattern matching and searching in strings."
+      },
+      {
+        "section_title": "Unit Testing",
+        "section_content": "Unit testing is a software testing technique in which individual units or components of a program are tested in isolation."
+      },
+      {
+        "section_title": "Concurrency and Multithreading",
+        "section_content": [
+          {
+            "concept": "Multithreading",
+            "description": "Python supports multithreading for concurrent execution of threads, often used for I/O-bound tasks."
+          },
+          {
+            "concept": "Multiprocessing",
+            "description": "The multiprocessing module enables parallel execution using multiple processes, suitable for CPU-bound tasks."
+          }
+        ]
+      },
+      {
+        "section_title": "Virtual Environments",
+        "section_content": "Virtual environments allow you to create isolated Python environments for managing dependencies and project-specific libraries."
+      },
+      {
+        "section_title": "Python 2 vs. Python 3",
+        "section_content": "Python 3 introduced several improvements and changes compared to Python 2, including improved Unicode support and new syntax features."
+      },
+      {
+        "section_title": "Web Development with Python",
+        "section_content": "Python is widely used for web development with frameworks like Django, Flask, and FastAPI."
+      },
+      {
+        "section_title": "Data Science and Machine Learning",
+        "section_content": "Python is a popular choice for data science and machine learning tasks, with libraries like scikit-learn and TensorFlow."
+      }
+    ]
+  },
+  {
+    "title": "Java Programming",
+    "sections": [
+      {
+        "section_title": "Introduction to Java",
+        "section_content": "Java is a versatile and widely-used programming language known for its platform independence and object-oriented features."
+      },
+      {
+        "section_title": "Variables and Data Types",
+        "section_content": [
+          {
+            "concept": "Variables",
+            "description": "Variables in Java are used to store and manage data. They have specific data types like int, double, and String."
+          },
+          {
+            "concept": "Data Types",
+            "description": "Java supports primitive data types (int, double, char) and reference data types (objects)."
+          }
+        ]
+      },
+      {
+        "section_title": "Control Structures",
+        "section_content": [
+          {
+            "concept": "Conditional Statements",
+            "description": "Java supports 'if', 'else if', and 'else' statements for decision-making."
+          },
+          {
+            "concept": "Loops",
+            "description": "Loops like 'for', 'while', and 'do-while' are used for iterative tasks in Java."
+          }
+        ]
+      },
+      {
+        "section_title": "Methods and Functions",
+        "section_content": "Methods in Java are blocks of code that perform a specific task and can be called from other parts of the program."
+      },
+      {
+        "section_title": "Classes and Objects",
+        "section_content": [
+          {
+            "concept": "Classes",
+            "description": "Classes are blueprint templates for creating objects in Java. They define the structure and behavior of objects."
+          },
+          {
+            "concept": "Objects",
+            "description": "Objects are instances of classes. They encapsulate data and methods that operate on that data."
+          }
+        ]
+      },
+      {
+        "section_title": "Inheritance",
+        "section_content": "Inheritance in Java allows one class (subclass or child class) to inherit properties and behaviors from another class (superclass or parent class)."
+      },
+      {
+        "section_title": "Polymorphism",
+        "section_content": "Polymorphism allows objects of different classes to be treated as objects of a common superclass. It includes method overriding and interfaces."
+      },
+      {
+        "section_title": "Exception Handling",
+        "section_content": "Java provides 'try-catch' blocks for handling exceptions and errors gracefully."
+      },
+      {
+        "section_title": "Collections Framework",
+        "section_content": "The Java Collections Framework includes classes and interfaces for data structures like lists, sets, and maps."
+      },
+      {
+        "section_title": "File I/O",
+        "section_content": "Java provides classes for reading from and writing to files, making it easy to work with external data."
+      },
+      {
+        "section_title": "Enums",
+        "section_content": "Enums in Java are used to represent a fixed set of constants. They provide type safety and can be used in switch statements."
+      },
+      {
+        "section_title": "Interfaces",
+        "section_content": "Interfaces define a contract for classes to implement. Multiple interfaces can be implemented by a single class."
+      },
+      {
+        "section_title": "Lambda Expressions",
+        "section_content": "Lambda expressions in Java allow you to define and use functions as values. They are often used for functional programming and working with collections."
+      },
+      {
+        "section_title": "Stream API",
+        "section_content": "The Stream API in Java provides a powerful way to work with sequences of elements, such as collections, in a functional style."
+      },
+      {
+        "section_title": "Concurrency and Multithreading",
+        "section_content": [
+          {
+            "concept": "Threads",
+            "description": "Java supports multithreading through the Thread class and Runnable interface, allowing for concurrent execution."
+          },
+          {
+            "concept": "Synchronization",
+            "description": "Synchronization mechanisms like synchronized blocks and locks are used to ensure thread safety."
+          },
+          {
+            "concept": "Thread Pools",
+            "description": "Thread pools manage and reuse threads, improving performance in applications with many concurrent tasks."
+          }
+        ]
+      },
+      {
+        "section_title": "Annotations",
+        "section_content": "Annotations are metadata that can be added to classes, methods, and fields to provide additional information or instructions."
+      },
+      {
+        "section_title": "Java Swing and JavaFX",
+        "section_content": "Java provides graphical user interface (GUI) libraries like Swing and JavaFX for creating desktop applications."
+      },
+      {
+        "section_title": "JDBC (Java Database Connectivity)",
+        "section_content": "JDBC allows Java applications to interact with databases. It provides a standardized way to execute SQL queries and manage database connections."
+      },
+      {
+        "section_title": "Maven and Gradle",
+        "section_content": "Maven and Gradle are popular build automation tools in the Java ecosystem used for project management, dependency resolution, and building."
+      },
+      {
+        "section_title": "Java Servlets and JSP",
+        "section_content": "Java Servlets and JavaServer Pages (JSP) are technologies used for developing web applications on the Java platform."
+      },
+      {
+        "section_title": "Reflection",
+        "section_content": "Reflection in Java allows you to inspect and manipulate class metadata, fields, methods, and constructors dynamically at runtime."
+      },
+      {
+        "section_title": "Java Annotations",
+        "section_content": "Java annotations are used for adding metadata to classes, methods, or fields and are commonly used in frameworks like Spring and Hibernate."
+      },
+      {
+        "section_title": "Java Persistence API (JPA)",
+        "section_content": "JPA is a Java specification for accessing, managing, and persisting data between Java objects and relational databases."
+      },
+      {
+        "section_title": "Java EE (Enterprise Edition)",
+        "section_content": "Java EE is a set of specifications and APIs for developing enterprise-level applications, including web services and messaging."
+      },
+      {
+        "section_title": "Dependency Injection (DI)",
+        "section_content": "Dependency Injection is a design pattern used to inject dependencies (e.g., objects, services) into a class instead of creating them within the class."
+      },
+      {
+        "section_title": "Spring Framework",
+        "section_content": "Spring is a popular Java framework that simplifies enterprise application development, offering features like dependency injection and aspect-oriented programming."
+      },
+      {
+        "section_title": "Hibernate",
+        "section_content": "Hibernate is an Object-Relational Mapping (ORM) framework that simplifies database access by mapping Java objects to database tables."
+      },
+      {
+        "section_title": "Java 9+ Modules",
+        "section_content": "Java modules, introduced in Java 9, allow you to encapsulate code and define clear boundaries between modules in large applications."
+      },
+      {
+        "section_title": "Java Collections Framework Enhancements",
+        "section_content": "Java continues to enhance the Collections Framework with features like the 'List.of()' factory methods and 'Map.of()' methods for creating immutable collections."
+      },
+      {
+        "section_title": "Java 11+ Features",
+        "section_content": "Recent Java versions have introduced features like local-variable type inference with 'var' and new APIs like the HttpClient for making HTTP requests."
+      }
+    ]
+  },
+  {
+    "title": "Theory of Computation (TOC)",
+    "sections": [
+      {
+        "section_title": "Introduction to Theory of Computation",
+        "section_content": "Theory of Computation (TOC) is a branch of computer science that deals with the study of algorithms and the limitations of computation."
+      },
+      {
+        "section_title": "Automata Theory",
+        "section_content": [
+          {
+            "concept": "Finite Automata",
+            "description": "Finite Automata are abstract machines that can be in a finite number of states and are used to recognize regular languages."
+          },
+          {
+            "concept": "Pushdown Automata",
+            "description": "Pushdown Automata extend finite automata with a stack, allowing them to recognize context-free languages."
+          },
+          {
+            "concept": "Turing Machines",
+            "description": "Turing Machines are theoretical machines capable of simulating any algorithm and are used to define the limits of computation."
+          }
+        ]
+      },
+      {
+        "section_title": "Formal Languages",
+        "section_content": [
+          {
+            "concept": "Regular Languages",
+            "description": "Regular languages can be recognized by finite automata and are described by regular expressions."
+          },
+          {
+            "concept": "Context-Free Languages",
+            "description": "Context-Free Languages can be recognized by pushdown automata and are often used to describe the syntax of programming languages."
+          },
+          {
+            "concept": "Context-Sensitive Languages",
+            "description": "Context-Sensitive Languages have more expressive power than context-free languages and are used in linguistic analysis."
+          },
+          {
+            "concept": "Recursively Enumerable Languages",
+            "description": "Recursively Enumerable Languages can be recognized by Turing Machines and include all possible languages."
+          }
+        ]
+      },
+      {
+        "section_title": "Non-deterministic Finite Automata (NFA)",
+        "section_content": "Non-deterministic Finite Automata are a type of finite automaton where multiple transitions can be taken from a state on the same input symbol."
+      },
+      {
+        "section_title": "NFA to DFA Conversion",
+        "section_content": "The process of converting a Non-deterministic Finite Automaton (NFA) into a Deterministic Finite Automaton (DFA) to simplify language recognition."
+      },
+      {
+        "section_title": "Minimization of DFAs",
+        "section_content": "Minimization is a process used to reduce the number of states in a Deterministic Finite Automaton (DFA) while preserving the recognized language."
+      },
+      {
+        "section_title": "Regular Expressions to DFAs",
+        "section_content": "The conversion of regular expressions to equivalent Deterministic Finite Automata (DFAs) and vice versa."
+      },
+      {
+        "section_title": "Pumping Lemma for Regular Languages",
+        "section_content": "The Pumping Lemma is a tool used to prove that certain languages are not regular by showing that they cannot satisfy its conditions."
+      },
+      {
+        "section_title": "Context-Free Grammars",
+        "section_content": "Context-Free Grammars (CFGs) are used to describe the syntax of programming languages and other context-free languages."
+      },
+      {
+        "section_title": "Pushdown Automata (PDA)",
+        "section_content": "Pushdown Automata extend finite automata with a stack, allowing them to recognize context-free languages."
+      },
+      {
+        "section_title": "Context-Free to Context-Sensitive Languages",
+        "section_content": "Context-free languages can be transformed into context-sensitive languages through various techniques."
+      },
+      {
+        "section_title": "Chomsky Normal Form (CNF)",
+        "section_content": "Chomsky Normal Form is a standard form for context-free grammars that simplifies the parsing of context-free languages."
+      },
+      {
+        "section_title": "Parsing Techniques",
+        "section_content": [
+          {
+            "concept": "Top-Down Parsing",
+            "description": "Top-Down parsing starts from the root of the parse tree and moves towards the leaves."
+          },
+          {
+            "concept": "Bottom-Up Parsing",
+            "description": "Bottom-Up parsing starts from the leaves of the parse tree and constructs the tree in a bottom-up manner."
+          }
+        ]
+      },
+      {
+        "section_title": "Automata in Compiler Design",
+        "section_content": "The role of automata theory in compiler design, including lexical analysis (tokenization) and syntax analysis (parsing)."
+      },
+      {
+        "section_title": "Computability Theory",
+        "section_content": [
+          {
+            "concept": "Halting Problem",
+            "description": "The Halting Problem is a classic example of an undecidable problem, proven by Alan Turing."
+          },
+          {
+            "concept": "Church-Turing Thesis",
+            "description": "The Church-Turing Thesis suggests that Turing Machines capture the notion of computability and any algorithm can be expressed as a Turing Machine."
+          },
+          {
+            "concept": "Undecidability",
+            "description": "Undecidability refers to problems that cannot be solved algorithmically, such as the Halting Problem."
+          }
+        ]
+      },
+      {
+        "section_title": "Complexity Theory",
+        "section_content": [
+          {
+            "concept": "P and NP Problems",
+            "description": "P problems are those that can be solved in polynomial time, while NP problems are those whose solutions can be verified in polynomial time."
+          },
+          {
+            "concept": "NP-Completeness",
+            "description": "NP-Complete problems are the hardest problems in NP, and they are used to study the difficulty of solving computational problems."
+          },
+          {
+            "concept": "Time and Space Complexity",
+            "description": "Time and space complexity are used to analyze the efficiency of algorithms in terms of computation time and memory usage."
+          }
+        ]
+      },
+      {
+        "section_title": "Automata-Based Language Processing",
+        "section_content": "Automata theory is widely used in language processing tasks, such as lexical analysis and parsing in compiler construction."
+      },
+      {
+        "section_title": "Formal Systems and Logic",
+        "section_content": [
+          {
+            "concept": "Formal Systems",
+            "description": "Formal systems are used to describe the syntax and rules of formal languages and are essential in TOC."
+          },
+          {
+            "concept": "Predicate Logic",
+            "description": "Predicate logic extends propositional logic and is used to express statements about objects and relationships."
+          },
+          {
+            "concept": "First-Order Logic",
+            "description": "First-order logic (FOL) is a more expressive logic system used in mathematics and computer science."
+          }
+        ]
+      },
+      {
+        "section_title": "Decidability and Recognizability",
+        "section_content": [
+          {
+            "concept": "Decidable Languages",
+            "description": "Decidable languages are those for which a Turing Machine can decide membership in the language."
+          },
+          {
+            "concept": "Recognizable Languages",
+            "description": "Recognizable languages are those for which a Turing Machine can accept strings in the language."
+          },
+          {
+            "concept": "Non-Context-Free Languages",
+            "description": "Non-context-free languages are those that cannot be recognized by pushdown automata."
+          }
+        ]
+      },
+      {
+        "section_title": "Theory of Formal Grammars",
+        "section_content": [
+          {
+            "concept": "Chomsky Hierarchy",
+            "description": "The Chomsky hierarchy classifies formal grammars into four types, including regular, context-free, context-sensitive, and recursively enumerable."
+          },
+          {
+            "concept": "Parsing",
+            "description": "Parsing is the process of analyzing the syntax of a language using formal grammars, often used in compilers and natural language processing."
+          },
+          {
+            "concept": "CYK Algorithm",
+            "description": "The Cocke-Younger-Kasami (CYK) algorithm is used for parsing context-free grammars, particularly in natural language processing."
+          }
+        ]
+      },
+      {
+        "section_title": "Computational Complexity Classes",
+        "section_content": [
+          {
+            "concept": "Polynomial Hierarchy",
+            "description": "The polynomial hierarchy is a hierarchy of complexity classes that extend the concept of NP to higher levels."
+          },
+          {
+            "concept": "Bounded Space Complexity",
+            "description": "Bounded space complexity classes, like L and NL, are used to study problems with limited memory resources."
+          },
+          {
+            "concept": "Quantum Computing",
+            "description": "Quantum computing is a field that explores the use of quantum-mechanical phenomena to perform computation more efficiently."
+          }
+        ]
+      },
+      {
+        "section_title": "Theory of Codes and Automata",
+        "section_content": [
+          {
+            "concept": "Error-Correcting Codes",
+            "description": "Error-correcting codes are used in data transmission to detect and correct errors in transmitted data."
+          },
+          {
+            "concept": "Finite Fields",
+            "description": "Finite fields, also known as Galois fields, are algebraic structures used in coding theory and cryptography."
+          },
+          {
+            "concept": "Finite State Machines",
+            "description": "Finite state machines are abstract machines that operate based on a finite set of states and transitions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Computer Organization and Architecture (COA)",
+    "sections": [
+      {
+        "section_title": "Introduction to COA",
+        "section_content": "Computer Organization and Architecture (COA) is the study of the hardware components and the way they interact in a computer system."
+      },
+      {
+        "section_title": "Central Processing Unit (CPU)",
+        "section_content": [
+          {
+            "concept": "CPU Components",
+            "description": "The CPU consists of components like the control unit, ALU (Arithmetic Logic Unit), and registers."
+          },
+          {
+            "concept": "Instruction Execution",
+            "description": "The CPU executes instructions by fetching, decoding, executing, and storing results."
+          },
+          {
+            "concept": "Instruction Set Architecture (ISA)",
+            "description": "ISA defines the architecture of the CPU, including instruction formats and addressing modes."
+          }
+        ]
+      },
+      {
+        "section_title": "Memory Hierarchy",
+        "section_content": [
+          {
+            "concept": "Memory Types",
+            "description": "Memory hierarchy includes registers, cache, main memory (RAM), and secondary storage (disk)."
+          },
+          {
+            "concept": "Cache Memory",
+            "description": "Cache memory is a high-speed memory that stores frequently used data to reduce CPU access time."
+          },
+          {
+            "concept": "Virtual Memory",
+            "description": "Virtual memory extends physical RAM by using disk space as an extension, improving multitasking."
+          }
+        ]
+      },
+      {
+        "section_title": "Input/Output (I/O) Systems",
+        "section_content": [
+          {
+            "concept": "I/O Devices",
+            "description": "I/O devices include keyboards, mice, monitors, printers, and more."
+          },
+          {
+            "concept": "I/O Interfaces",
+            "description": "I/O interfaces connect devices to the computer system and manage data transfer."
+          },
+          {
+            "concept": "Interrupts",
+            "description": "Interrupts are signals that notify the CPU to suspend its current task and handle a specific event."
+          }
+        ]
+      },
+      {
+        "section_title": "Pipelining",
+        "section_content": "Pipelining is a technique that allows multiple instructions to be processed simultaneously in different stages of the pipeline."
+      },
+      {
+        "section_title": "Parallel Processing",
+        "section_content": [
+          {
+            "concept": "Multi-core Processors",
+            "description": "Multi-core processors contain multiple CPU cores on a single chip for parallel execution."
+          },
+          {
+            "concept": "Vector Processing",
+            "description": "Vector processors perform operations on arrays of data, often used in scientific computing."
+          },
+          {
+            "concept": "Distributed Computing",
+            "description": "Distributed computing involves multiple computers working together to solve a problem."
+          }
+        ]
+      },
+      {
+        "section_title": "Instruction-Level Parallelism (ILP)",
+        "section_content": [
+          {
+            "concept": "Superscalar Processors",
+            "description": "Superscalar processors execute multiple instructions per clock cycle by dispatching them to multiple functional units."
+          },
+          {
+            "concept": "Out-of-Order Execution",
+            "description": "Out-of-order execution allows the CPU to execute instructions in a more efficient order."
+          }
+        ]
+      },
+      {
+        "section_title": "Computer Architecture Trends",
+        "section_content": "Trends in COA include energy-efficient processors, heterogeneous computing, and quantum computing."
+      },
+      {
+        "section_title": "CISC and RISC Architectures",
+        "section_content": [
+          {
+            "concept": "CISC (Complex Instruction Set Computer)",
+            "description": "CISC architectures have a rich set of complex instructions, often requiring multiple clock cycles to execute."
+          },
+          {
+            "concept": "RISC (Reduced Instruction Set Computer)",
+            "description": "RISC architectures use a simplified instruction set with fixed-length instructions, typically executing in a single clock cycle."
+          },
+          {
+            "concept": "VLIW (Very Long Instruction Word)",
+            "description": "VLIW architectures use multiple execution units to process multiple instructions simultaneously."
+          }
+        ]
+      },
+      {
+        "section_title": "Memory Management",
+        "section_content": [
+          {
+            "concept": "Memory Protection",
+            "description": "Memory protection mechanisms prevent unauthorized access to memory locations."
+          },
+          {
+            "concept": "Cache Coherence",
+            "description": "Cache coherence protocols ensure that multiple caches in a multiprocessor system have consistent data."
+          },
+          {
+            "concept": "Memory Mapping",
+            "description": "Memory mapping defines how memory addresses are mapped to physical memory and devices."
+          }
+        ]
+      },
+      {
+        "section_title": "Instruction Pipelining",
+        "section_content": "Instruction pipelining is a technique that divides instruction execution into stages to improve throughput and performance."
+      },
+      {
+        "section_title": "SuperScalar Processors",
+        "section_content": "SuperScalar processors execute multiple instructions in parallel by dispatching them to multiple functional units."
+      },
+      {
+        "section_title": "SIMD and MIMD Architectures",
+        "section_content": [
+          {
+            "concept": "SIMD (Single Instruction, Multiple Data)",
+            "description": "SIMD architectures perform the same operation on multiple data elements simultaneously."
+          },
+          {
+            "concept": "MIMD (Multiple Instruction, Multiple Data)",
+            "description": "MIMD architectures have multiple processors that can execute different instructions on different data."
+          }
+        ]
+      },
+      {
+        "section_title": "Computer Arithmetic",
+        "section_content": [
+          {
+            "concept": "Fixed-Point Arithmetic",
+            "description": "Fixed-point arithmetic is used for representing and performing operations on fixed precision numbers."
+          },
+          {
+            "concept": "Floating-Point Arithmetic",
+            "description": "Floating-point arithmetic is used for representing real numbers with variable precision."
+          },
+          {
+            "concept": "Arithmetic Logic Unit (ALU)",
+            "description": "The ALU is a critical component of the CPU responsible for performing arithmetic and logical operations."
+          }
+        ]
+      },
+      {
+        "section_title": "Processor Architecture Evolution",
+        "section_content": "The evolution of processor architectures, from early single-core CPUs to modern multi-core and heterogeneous processors."
+      },
+      {
+        "section_title": "Quantum Computing",
+        "section_content": "Quantum computing is a revolutionary field that uses quantum bits (qubits) to perform computations with the potential to solve complex problems exponentially faster."
+      }
+    ]
+  },
+  {
+    "title": "Discrete Mathematics Concepts Tutorial",
+    "sections": [
+      {
+        "section_title": "Introduction to Discrete Mathematics",
+        "section_content": "Discrete Mathematics is a branch of mathematics that deals with countable, distinct, and separate objects and structures."
+      },
+      {
+        "section_title": "Set Theory",
+        "section_content": [
+          {
+            "concept": "Sets and Elements",
+            "description": "Sets are collections of distinct elements. Elements can be anything, and sets are defined by listing their elements or using set-builder notation."
+          },
+          {
+            "concept": "Operations on Sets",
+            "description": "Operations include union, intersection, complement, and set difference, used to manipulate sets."
+          },
+          {
+            "concept": "Set Cardinality",
+            "description": "Cardinality refers to the number of elements in a set. Infinite sets can also have cardinalities."
+          }
+        ]
+      },
+      {
+        "section_title": "Logic and Propositional Calculus",
+        "section_content": [
+          {
+            "concept": "Propositions and Connectives",
+            "description": "Propositions are statements that are either true or false. Connectives like AND, OR, NOT are used to create compound propositions."
+          },
+          {
+            "concept": "Truth Tables",
+            "description": "Truth tables are used to analyze the truth values of compound propositions under different scenarios."
+          },
+          {
+            "concept": "Logical Equivalence",
+            "description": "Two propositions are logically equivalent if they have the same truth values for all possible inputs."
+          }
+        ]
+      },
+      {
+        "section_title": "Predicates and Quantifiers",
+        "section_content": [
+          {
+            "concept": "Predicates",
+            "description": "Predicates are propositions that depend on one or more variables. They can be either true or false depending on the values of the variables."
+          },
+          {
+            "concept": "Quantifiers",
+            "description": "Quantifiers like 'for all' (∀) and 'there exists' (∃) are used to express statements about sets and elements."
+          },
+          {
+            "concept": "Nested Quantifiers",
+            "description": "Nested quantifiers are used to express more complex statements about multiple variables."
+          }
+        ]
+      },
+      {
+        "section_title": "Relations and Functions",
+        "section_content": [
+          {
+            "concept": "Relations",
+            "description": "Relations are sets of ordered pairs that represent connections or associations between elements in sets."
+          },
+          {
+            "concept": "Functions",
+            "description": "Functions are special types of relations where each input maps to a unique output. They play a crucial role in mathematics and computer science."
+          },
+          {
+            "concept": "Types of Functions",
+            "description": "Functions can be injective (one-to-one), surjective (onto), or bijective (one-to-one and onto)."
+          }
+        ]
+      },
+      {
+        "section_title": "Combinatorics",
+        "section_content": [
+          {
+            "concept": "Permutations",
+            "description": "Permutations are arrangements of elements in a specific order, often used in counting and arranging objects."
+          },
+          {
+            "concept": "Combinations",
+            "description": "Combinations are selections of elements without considering the order, used in counting subsets."
+          },
+          {
+            "concept": "Binomial Coefficients",
+            "description": "Binomial coefficients, denoted as 'n choose k' (nCk), represent the number of ways to choose k elements from n without repetition."
+          }
+        ]
+      },
+      {
+        "section_title": "Graph Theory",
+        "section_content": [
+          {
+            "concept": "Graphs and Graph Elements",
+            "description": "Graphs are mathematical structures consisting of vertices and edges. Elements include paths, cycles, and connected components."
+          },
+          {
+            "concept": "Graph Representations",
+            "description": "Graphs can be represented using adjacency matrices and adjacency lists, each with its advantages."
+          },
+          {
+            "concept": "Graph Algorithms",
+            "description": "Algorithms like Dijkstra's algorithm, Prim's algorithm, and graph traversal techniques are used for solving graph problems."
+          }
+        ]
+      },
+      {
+        "section_title": "Number Theory",
+        "section_content": [
+          {
+            "concept": "Prime Numbers",
+            "description": "Prime numbers are positive integers greater than 1 that have no divisors other than 1 and themselves."
+          },
+          {
+            "concept": "Modular Arithmetic",
+            "description": "Modular arithmetic deals with operations like addition and multiplication on integers modulo a fixed number (the modulus)."
+          },
+          {
+            "concept": "GCD and LCM",
+            "description": "The Greatest Common Divisor (GCD) and Lowest Common Multiple (LCM) are fundamental concepts in number theory."
+          }
+        ]
+      },
+      {
+        "section_title": "Combinatorial Optimization",
+        "section_content": [
+          {
+            "concept": "Traveling Salesman Problem (TSP)",
+            "description": "TSP is a classic optimization problem that seeks to find the shortest route visiting a set of cities and returning to the starting city."
+          },
+          {
+            "concept": "Knapsack Problem",
+            "description": "The knapsack problem involves selecting a combination of items with maximum value within a weight constraint."
+          },
+          {
+            "concept": "Graph Coloring",
+            "description": "Graph coloring aims to assign colors to the vertices of a graph in such a way that adjacent vertices have different colors."
+          }
+        ]
+      },
+      {
+        "section_title": "Probability and Combinatorics",
+        "section_content": [
+          {
+            "concept": "Probability Basics",
+            "description": "Probability theory deals with the likelihood of events occurring and is essential in various fields, including statistics and data science."
+          },
+          {
+            "concept": "Counting Principles",
+            "description": "Counting techniques like permutations, combinations, and the inclusion-exclusion principle are used in combinatorics."
+          },
+          {
+            "concept": "Probability Distributions",
+            "description": "Common probability distributions include the binomial, normal, and Poisson distributions."
+          }
+        ]
+      },
+      {
+        "section_title": "Coding Theory",
+        "section_content": [
+          {
+            "concept": "Error-Correcting Codes",
+            "description": "Error-correcting codes are used in data transmission to detect and correct errors in transmitted data."
+          },
+          {
+            "concept": "Hamming Distance",
+            "description": "Hamming distance measures the difference between two strings of equal length and is used in error detection and correction."
+          },
+          {
+            "concept": "Coding Theory Applications",
+            "description": "Coding theory is used in error-correcting techniques for data storage, telecommunications, and cryptography."
+          }
+        ]
+      }
+    ]
+  }
+]

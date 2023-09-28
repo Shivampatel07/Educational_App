@@ -1,0 +1,193 @@
+/* 
+                color combinations
+Hex codes: Lavender #E2D1F9,Teal #317773 , #e7e8d189
+Hex codes: Cherry Red #990011,Off-White #FCF6F5
+Hex codes: Peach #FCEDDA,Burnt Orange #EE4E34
+Hex codes: Royal Blue #00539C, Peach #EEA47F
+Hex codes: Forest Green #2C5F2D, Moss Green #97BC62
+Hex codes: Scarlet #B85042, Light Olive #E7E8D1, Light Teal #A7BEAE
+Hex codes: Royal Blue #234E70, Pale Yellow #FBF8BE
+Hex code: #9E795F , #101820
+Hex codes: #ffffff , #234E70
+Hex code: #1d3c45, #fff1e1
+Hex codes: Swiss Coffee: #E1DCD9 , Schooner: #8F868  , Pharlap: #A67F78 , Mine Shaft: #3E3C3C
+Hex codes : #00539C , #fff1e1
+Hex codes : #101820 , #e7e8d189
+Hex code: #1d3c45, #ffffff
+Hex codes: #ffffff , #1072bc
+*/
+:root {
+  --navbar: #000305;
+  --background: #ffffff;
+  --hover: #e7e8d189;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+*::selection {
+  background: gray;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--navbar);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--navbar);
+  color: var(--background);
+  padding: 10px 5%;
+  transition: all 0.5s ease;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--background);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 10px;
+  margin: 0px 20px;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--hover);
+  color: black;
+  /* border-radius: 50%; */
+  transition: all 0.3s ease;
+}
+
+.main a:hover {
+  background-color: var(--hover);
+  color: black;
+  /* border-radius: 50%; */
+  transition: all 0.3s ease;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--background);
+  padding: 10px 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--background);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+@media (max-width: 1280px) {
+  nav {
+    padding: 14px 5%;
+    transition: 0.2s;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+
+  .navbar a:hover {
+    background-color: var(--hover);
+    color: black;
+  }
+}
+
+@media (max-width: 1090px) {
+  .logo {
+    width: 100px;
+  }
+
+  nav {
+    padding: 10px 2%;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  nav {
+    font-size: medium;
+    padding: 28px 5%;
+    height: 70px;
+  }
+
+  .main a {
+    margin-right: 10px;
+    margin-left: 7px;
+    color: black;
+    padding: 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 130%;
+    right: -100%;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    background-color: var(--navbar);
+    color: var(--background);
+  }
+
+  .navbar a {
+    display: block;
+    margin: 0px 0;
+    padding: 12px 25px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+
+  .navbar a:hover {
+    background-color: var(--hover);
+    color: black;
+  }
+}

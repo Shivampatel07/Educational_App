@@ -1,0 +1,126 @@
+#QuizTitle {
+  font-size: 60px;
+  text-align: center;
+  font-family: Elephant;
+  margin: 30px;
+}
+
+#QuizGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin: 5vw;
+  padding: 5vw;
+  grid-template-rows: none;
+  background-color: #1a4843;
+  color: #ecfffc;
+  border-radius: 10px;
+}
+
+.QuizButton {
+  margin: 10px 30%;
+  width: 100px;
+  padding: 5px;
+  background-color: #1a4843;
+  color: #ecfffc;
+  border: #1a4843;
+  border-radius: 10px 0px 10px 0px;
+  transition: all 0.5s ease;
+}
+
+.QuizButton:hover {
+  transition: all 0.5s ease;
+  background-color: rgb(0, 0, 0);
+  color: #1a4843;
+  text-decoration: none;
+  color: red !important;
+}
+
+.card {
+  /* width: 300px;
+    height: 200px; */
+  border: solid #ecfffc 2px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.644);
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ecfffc;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.card h2,
+.card p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.card .description {
+  display: none;
+  padding: 20px;
+}
+
+.card:hover .description {
+  display: block;
+}
+
+#quizTitle {
+  font-size: 50px;
+  text-align: center;
+}
+
+.questions {
+  font-size: 25px;
+  padding: 25px 15px;
+  background-color: rgb(186, 186, 186);
+  user-select: none;
+  border-radius: 10px;
+}
+.options p {
+  text-indent: 15px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1090px) {
+  .questions {
+    margin: 20px -25px;
+    font-size: 17px;
+    padding: 10px 7px;
+    border-radius: 8px;
+  }
+  .options p {
+    text-indent: 10px;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+  }
+  #QuizGrid {
+    grid-template-columns: none;
+    grid-template-rows: auto auto auto;
+  }
+}

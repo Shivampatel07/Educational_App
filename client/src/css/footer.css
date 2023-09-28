@@ -1,0 +1,97 @@
+@import url("https://fontsforyou.com/fonts/p/Play Pretend.otf");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
+.footer{
+    /* border: 1px solid black; */
+    color:#ffffff;
+    padding: 20px 50px;
+    background-color: #1d1d1d;
+}
+.footer-items{
+     /* border: 1px solid rgb(255, 1, 1); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 50px; */
+}
+
+
+.footer-categorey > div > a{
+    font-size: 20px;
+    font-weight: 150;
+    text-decoration: none;
+    font-family: 'Play Pretend';
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 0px 0px 15px 0px;
+    color:#ffffff;
+}
+.footer-categorey > div > a:hover{
+    color:white;
+}
+    
+.social-item a svg{
+  display: inline;
+    fill: #fdfdff;
+}
+.discord:hover{
+    fill:#7289d9;
+}
+.instagram:hover{
+    fill:#d62976;
+}
+.youtube:hover{
+    fill:#b2071d;
+}
+.twitter:hover{
+    fill:#26a7de;
+}
+.social-media{ 
+    text-align: center;
+    padding: 20px;
+    width: 100%
+}
+.social-media > div{
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-family: var(--secondary-font);
+    text-align: center;
+    padding: 0px 0px 2px 0px;
+    margin-bottom: 5px;
+    color:#f4f4ff;
+} 
+.social-item{
+    margin-top: 7px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.social-link{
+    margin:0px 10px;
+    text-decoration: none;
+}
+
+.link-item{
+  color:#f5f5fc;  
+  font-size: 14px;
+text-decoration: none;
+font-family: var(--ternary-font);
+/* display: block; */
+padding: 5px 8px;
+}
+
+.link-item:hover{
+    text-decoration: underline;
+}
+
+.domain-name{
+    font-size: 14px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-family: var(--ternary-font);
+    padding: 10px 10px;
+    border-top: 0.8px solid #f5f5ff;
+    color:#ececf2;
+}
