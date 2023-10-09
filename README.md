@@ -1,6 +1,6 @@
 # Eliscops Coding Study - MERN Stack Website
 
-A web application for studying and sharing coding resources, built using the MERN (MongoDB, Express, React, Node.js) stack. This project aims to provide a platform for coding enthusiasts to learn and share their knowledge.
+A web application for studying and appering in quizes , built using the MERN (MongoDB, Express, React, Node.js) stack. This project aims to provide a platform for coding enthusiasts to learn and share their knowledge.
 
 ## Table of Contents
 
@@ -35,9 +35,6 @@ A web application for studying and sharing coding resources, built using the MER
   - Mongoose for database modeling
   - JWT for user authentication
 
-- **Deployment:**
-  - Deployment details here (e.g., Heroku, Netlify, Vercel, etc.)
-  - Continuous integration (e.g., GitHub Actions, Travis CI, etc.)
 
 ## Getting Started
 
