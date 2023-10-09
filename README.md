@@ -62,3 +62,17 @@ A web application for studying and sharing coding resources, built using the MER
    ```bash
    cd ../client
    npm install
+4. Set up your environment variables by creating a .env file in the server directory. Include your MongoDB connection string and JWT secret:
+   ```bash
+   MONGO_DB_URL=your_mongodb_uri
+   HASH_PASSWORD_SALT=your_hash_password_salt
+   JWT_SECRET=your_secret_key
+5. Start the server:
+   ```bash
+   # From the server directory
+   node index
+6. Start the client:
+   ```bash
+   # From the client directory
+   npm start
+7. Visit "http://localhost:3000" to access the application in your web browser.
