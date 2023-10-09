@@ -4,7 +4,7 @@ A web application for studying and appering in quizes , built using the MERN (Mo
 
 ## PPT For better understand
 
-[shivam.pptx](https://github.com/Shivampatel07/FSD-INDIVIDUAL-FINAL/files/12844255/shivam.pptx)
+# [shivam.pptx](https://github.com/Shivampatel07/FSD-INDIVIDUAL-FINAL/files/12844255/shivam.pptx)
 
 ## Demo 
 
