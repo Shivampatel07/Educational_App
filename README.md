@@ -76,3 +76,10 @@ A web application for studying and sharing coding resources, built using the MER
    # From the client directory
    npm start
 7. Visit "http://localhost:3000" to access the application in your web browser.
+
+## Usage
+- Sign up and log in to start exploring and sharing coding resources.
+- Add coding resources, comment on others' resources, and engage in discussions.
+
+## Contributing
+
