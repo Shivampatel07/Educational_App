@@ -2,12 +2,13 @@
 
 A web application for studying and appering in quizes , built using the MERN (MongoDB, Express, React, Node.js) stack. This project aims to provide a platform for coding enthusiasts to learn and share their knowledge.
 
-## Demo 
-
-https://github.com/Shivampatel07/FSD-INDIVIDUAL-FINAL/assets/102176101/56c1a33a-5823-4365-ba3c-fccaaeacd998
+## PPT For better understand
 
 [shivam.pptx](https://github.com/Shivampatel07/FSD-INDIVIDUAL-FINAL/files/12844255/shivam.pptx)
 
+## Demo 
+
+https://github.com/Shivampatel07/FSD-INDIVIDUAL-FINAL/assets/102176101/56c1a33a-5823-4365-ba3c-fccaaeacd998
 
 
 ## Table of Contents
