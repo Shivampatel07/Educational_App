@@ -55,10 +55,10 @@ A web application for studying and sharing coding resources, built using the MER
    ```bash
    git clone https://github.com/yourusername/eliscops-coding-study.git
 2. Install server dependencies:
-  ```bash 
-  cd server
-  npm install
-```
+   ```bash 
+   cd server
+   npm install
+
 3. Install client dependencies:
    ```bash
    cd ../client
