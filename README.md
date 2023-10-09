@@ -11,7 +11,6 @@ A web application for studying and sharing coding resources, built using the MER
   - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -82,4 +81,10 @@ A web application for studying and sharing coding resources, built using the MER
 - Add coding resources, comment on others' resources, and engage in discussions.
 
 ## Contributing
+- If you'd like to contribute to this project, please follow these steps:
 
+  1. Fork the project.
+  2. Create a new branch for your feature or bugfix: git checkout -b feature/your-feature-name or bugfix/your-bugfix-name.
+  3. Commit your changes: git commit -m "Add feature/fix bug"
+  4. Push to your branch: git push origin feature/your-feature-name.
+  5. Create a Pull Request on GitHub.
