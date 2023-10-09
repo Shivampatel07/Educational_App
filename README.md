@@ -58,13 +58,7 @@ A web application for studying and sharing coding resources, built using the MER
    ```bash 
    cd server
    npm install
-
 3. Install client dependencies:
    ```bash
    cd ../client
    npm install
-
-
-
-
-
