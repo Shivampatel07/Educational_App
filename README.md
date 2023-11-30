@@ -94,3 +94,40 @@ https://github.com/Shivampatel07/FSD-INDIVIDUAL-FINAL/assets/102176101/56c1a33a-
   3. Commit your changes: git commit -m "Add feature/fix bug"
   4. Push to your branch: git push origin feature/your-feature-name.
   5. Create a Pull Request on GitHub.
+
+```bash
+import React, { useRef, useEffect } from 'react';
+
+const AudioPlayer = ({ audioData }) => {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const context = new (window.AudioContext || window.webkitAudioContext)();
+    const audioBuffer = context.createBuffer(2, audioData.length, context.sampleRate);
+
+    for (let channel = 0; channel < audioBuffer.numberOfChannels; channel++) {
+      const nowBuffering = audioBuffer.getChannelData(channel);
+      for (let i = 0; i < audioBuffer.length; i++) {
+        nowBuffering[i] = audioData[i];
+      }
+    }
+
+    const source = context.createBufferSource();
+    source.buffer = audioBuffer;
+    source.connect(context.destination);
+
+    source.start();
+
+    audioRef.current = source;
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.stop();
+      }
+    };
+  }, [audioData]);
+
+  return <div>Audio Player</div>;
+};
+
+export default AudioPlayer;
